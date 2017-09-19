@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-let data = require('../StoreData.js')
+import data from '../StoreData'
 
 export default class AllMiscellaneous extends Component{
   constructor(props){
@@ -10,6 +10,7 @@ export default class AllMiscellaneous extends Component{
     }
   }
   render(){
+    console.log("check it out", data);
     console.log(this.state.items);
     let miscData = this.state.items
     let miscItems = miscData.map((item) =>{

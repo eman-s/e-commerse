@@ -14,11 +14,59 @@
   color: white;
 }
 
+.links{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
 .App-intro {
   font-size: large;
+}
+
+.navLinks {
+  font-size: 20px;
+}
+
+.selected{
+  color:red;
+}
+
+.content {
+    background-color: #222;
+    background-size: cover;
+    margin-top: -50px;
+    padding-bottom: 50px;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.productImage{
+  height:50%;
+  width: 50%;
+}
+
+.vehicle, .weapon, .miscItem {
+  padding: 100px;
+  padding-top: 50px;
+  font-size: 50px;
+
+}
+
+.unitPrice {
+  color:green;
+}
+
+h1 {
+  font-family: 'Sarpanch', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Libre Barcode 39 Text', cursive;
 }

@@ -10,21 +10,17 @@ import Home from './components/Home'
 import AllVehicles from './components/AllVehicles'
 import AllWeapons from './components/AllWeapons'
 import AllMisc from './components/AllMisc'
-import Vehicle from './components/Vehicle'
-import Weapon from './components/Weapon'
-import MiscellaneousItem from './components/Miscellaneous'
+import Details from './components/Details'
 
 ReactDOM.render(
   <BrowserRouter>
     <BaseLayout>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/vehicles/:id' component={Vehicle} />
-        <Route path='/weapons/:id' component={Weapon} />
-        <Route path='/misc/:id' component={MiscellaneousItem} />
-        <Route path='/vehicles' component={AllVehicles} />
-        <Route path='/weapons' component={AllWeapons} />
-        <Route path='/misc' component={AllMisc} />
+        <Route path='/:endpoint/:id' component={Details} />
+        <Route path='/vehicles/' component={AllVehicles} />
+        <Route path='/weapons/' component={AllWeapons} />
+        <Route path='/misc/' component={AllMisc} />
       </Switch>
     </BaseLayout>
   </BrowserRouter>

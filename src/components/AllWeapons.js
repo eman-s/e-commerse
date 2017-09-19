@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-let data = require('../StoreData.js')
+import data from '../StoreData'
 
 
 export default class AllWeapons extends Component{

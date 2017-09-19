@@ -7,11 +7,17 @@ export default class BaseLayout extends Component {
     return (
       <div className="baseLayout">
         <div className="navigation">
-          <NavLink to='/' activeStyle={{color:'red'}}>Home</NavLink>
-          <NavLink to='/vehicles' activeClassName='selected'>Vehicles</NavLink>
-          <NavLink to='/weapons' activeClassName='selected'>Weapons</NavLink>
-          <NavLink to='/misc' activeClassName='selected'>Miscellaneous</NavLink>
+          <section className='links'>
+            <NavLink to='/' activeClassName='selected' className='navLinks'>Home</NavLink>
+            <NavLink to='/vehicles/' activeClassName='selected' className='navLinks'>Vehicles</NavLink>
+            <NavLink to='/weapons/' activeClassName='selected' className='navLinks'>Weapons</NavLink>
+            <NavLink to='/misc/' activeClassName='selected' className='navLinks'>Miscellaneous</NavLink>
+          </section>
+          <h1>Sci-Fi Post-Apocalypse R Us</h1>
         </div>
+          <br/>
+
+
         <div className='content'>
         {this.props.children}
         </div>
